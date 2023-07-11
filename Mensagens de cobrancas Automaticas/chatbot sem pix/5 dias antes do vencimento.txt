@@ -1,0 +1,22 @@
+notas referente ao exemplo, verifique que voce precisa alterar o ENDERECO_DE_ACESSO_MKAUTH
+para o ENDERECO que voce acessa seu MKAUTH EXTERNAMENTE DE "OUTRA REDE"
+
+Outro fato importante, a partir das versoes 22.XX do MKAUTH o endereco do boleto foi alterado para boleto.hhvm
+Caso seu mkauth for uma versão inferior a essa verifique abrindo um boleto de algum cliente como esta o nome do boleto
+normalmente a versao 19 ficara assim 19boleto.php
+Versao 20 ficara assim 20boleto.php
+Versao 21 ficara 21boleto.php
+
+Não escreva nada abaixo do código de barras, somente coloque informções diferentes acima do código de barras, 
+abaixo do código de barras, somente altere a URL/ENDERECO e boleto.hhvm caso seu mkauth for versao inferior a 22.XX
+
+
+*[MENSAGEM AUTOMÁTICA]*
+Ola, tudo bom?
+
+Seu boleto da internet vence em *5 dias*.
+
+*Data de Vencimento*: %vencimento%
+*Valor*: %valortitulo%
+*Código de Barras* :
+upp,pular_codigo upp,%linhadig%pdf,enviar_pdf pdf,http://ENDERECO_DE_ACESSO_MKAUTH/boleto/boleto.hhvm?titulo=%numerotitulo%
